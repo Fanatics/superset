@@ -29,6 +29,9 @@ const themes = {
   [ThemeType.LIGHT]: lightAlgorithm,
 };
 
+// Want to figure out which tokens look like what? Try this!
+// https://ant.design/theme-editor
+
 const baseConfig: ThemeConfig = {
   token: {
     borderRadius: supersetTheme.borderRadius,
@@ -52,13 +55,46 @@ const baseConfig: ThemeConfig = {
     zIndexPopupBase: supersetTheme.zIndex.max,
   },
   components: {
+    Alert: {
+      borderRadius: supersetTheme.borderRadius,
+      colorBgContainer: supersetTheme.colors.grayscale.light5,
+      colorBorder: supersetTheme.colors.grayscale.light3,
+      fontSize: supersetTheme.typography.sizes.m,
+      fontSizeLG: supersetTheme.typography.sizes.m,
+      fontSizeIcon: supersetTheme.typography.sizes.l,
+      colorText: supersetTheme.colors.grayscale.dark1,
+    },
+    Avatar: {
+      containerSize: 32,
+      fontSize: supersetTheme.typography.sizes.s,
+      lineHeight: 32,
+    },
     Badge: {
       paddingXS: supersetTheme.gridUnit * 2,
     },
     Card: {
-      colorBgContainer: supersetTheme.colors.grayscale.light4,
       paddingLG: supersetTheme.gridUnit * 6,
       fontWeightStrong: supersetTheme.typography.weights.medium,
+    },
+    Input: {
+      colorBorder: supersetTheme.colors.secondary.light3,
+      colorBgContainer: supersetTheme.colors.grayscale.light5,
+      activeShadow: `0 0 0 ${supersetTheme.gridUnit / 2}px ${
+        supersetTheme.colors.primary.light3
+      }`,
+    },
+    InputNumber: {
+      colorBorder: supersetTheme.colors.secondary.light3,
+      colorBgContainer: supersetTheme.colors.grayscale.light5,
+      activeShadow: `0 0 0 ${supersetTheme.gridUnit / 2}px ${
+        supersetTheme.colors.primary.light3
+      }`,
+    },
+    List: {
+      itemPadding: `${supersetTheme.gridUnit + 2}px ${supersetTheme.gridUnit * 3}px`,
+      paddingLG: supersetTheme.gridUnit * 3,
+      colorSplit: supersetTheme.colors.grayscale.light3,
+      colorText: supersetTheme.colors.grayscale.dark1,
     },
     Tag: {
       borderRadiusSM: 2,
@@ -69,6 +105,9 @@ const baseConfig: ThemeConfig = {
       colorText: supersetTheme.colors.text.label,
       remainingColor: supersetTheme.colors.grayscale.light4,
     },
+    Popover: {
+      colorBgElevated: supersetTheme.colors.grayscale.light5,
+    },
     Slider: {
       trackBgDisabled: supersetTheme.colors.grayscale.light1,
       colorBgElevated: supersetTheme.colors.grayscale.light5,
@@ -78,6 +117,10 @@ const baseConfig: ThemeConfig = {
     Switch: {
       colorPrimaryHover: supersetTheme.colors.primary.base,
       colorTextTertiary: supersetTheme.colors.grayscale.light1,
+    },
+    Tooltip: {
+      fontSize: supersetTheme.typography.sizes.s,
+      lineHeight: 1.6,
     },
   },
 };

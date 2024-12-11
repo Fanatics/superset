@@ -29,6 +29,7 @@ Join our growing community!
 ### Sharing Economy
 - [Airbnb](https://github.com/airbnb)
 - [Faasos](https://faasos.com/) [@shashanksingh]
+- [Free2Move](https://www.free2move.com/) [@PaoloTerzi]
 - [Hostnfly](https://www.hostnfly.com/) [@alexisrosuel]
 - [Lime](https://www.li.me/) [@cxmcc]
 - [Lyft](https://www.lyft.com/)
@@ -161,6 +162,7 @@ Join our growing community!
 - [REDCap Cloud](https://www.redcapcloud.com/)
 - [TrustMedis](https://trustmedis.com/) [@famasya]
 - [WeSure](https://www.wesure.cn/)
+- [2070Health](https://2070health.com/)
 
 ### HR / Staffing
 - [Swile](https://www.swile.co/) [@PaoloTerzi]
